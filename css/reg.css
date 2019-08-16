@@ -1,0 +1,691 @@
+.u-borderTop {
+	height: 5px;
+	width: 100%;
+	background: url(/image/lineBg.jpg) center 0 no-repeat;
+	background-size: 100% 100%;
+	border-radius: 2px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0
+}
+
+.u-input {
+	position: relative;
+	width: 100%
+}
+
+.u-input>* {
+	line-height: normal;
+	vertical-align: middle;
+	display: inline-block;
+	box-sizing: border-box
+}
+
+.u-input label {
+	width: 32%;
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+	color: #738299;
+	padding-right: 16px;
+	margin-bottom: 4px
+}
+
+.u-input .msg {
+	padding-left: 8px;
+	display: inline-block;
+	margin-bottom: 4px;
+	color: #292929
+}
+
+.u-input .msg>* {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.u-input .msg i {
+	width: 16px;
+	height: 16px;
+	background: url(/image/icons.png) -175px -56px no-repeat
+}
+
+.u-input .msg font {
+	padding-left: 4px;
+	max-width: 230px;
+	overflow: hidden;
+	word-break: break-all
+}
+
+.u-input .msg font.z-noWrap {
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.u-input .msg.z-err {
+	color: #fa5b5b
+}
+
+.u-input .msg.z-err i {
+	background-position: -175px 1px
+}
+
+.u-input .msg a {
+	color: #0075ff
+}
+
+.u-input .inputWrapper {
+	width: 36%;
+	position: relative
+}
+
+.u-input .inputWrapper>* {
+	box-sizing: border-box
+}
+
+.u-input input[type="text"], .u-input input[type="password"] {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+	padding: 0;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	padding-left: 10px
+}
+
+.u-input input[type="text"].short, .u-input input[type="password"].short {
+	width: 62%
+}
+
+.u-input .vis {
+	display: inline-block;
+	width: 30px;
+	height: 34px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(./image/icons.png) -85px -60px no-repeat;
+	background-color: #fff;
+	cursor: pointer
+}
+
+.u-input .vis.z-on {
+	background-position: -85px -95px
+}
+
+.u-input .button {
+	text-align: center;
+	width: 102px;
+	height: 28px;
+	line-height: 26px;
+	border: 1px solid #B39DDB;
+	background-color: #fff;
+	color: #7E57C2;
+	border-radius: 2px;
+	cursor: pointer;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -14px
+}
+
+.u-input .button:hover {
+	border-color: #7E57C2;
+	background-color: #7E57C2;
+	color: #fff
+}
+
+.u-input .button[disabled] {
+	border-color: #dcdcdc;
+	color: #ccc;
+	cursor: default;
+	background: 0
+}
+
+.u-checkBox {
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: normal;
+	overflow: hidden
+}
+
+.u-checkBox i {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: url(../image/icons.png) -86px -174px no-repeat
+}
+
+.u-checkBox input[type="checkbox"]:checked+i {
+	background-position: -86px -143px
+}
+
+.u-checkBox input[type="checkbox"] {
+	display: inline-block;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 100%;
+	height: 100%
+}
+
+.u-bigBtn {
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	background-color: #7E57C2;
+	border-radius: 2px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	outline: 0;
+	border: 0;
+	cursor: pointer
+}
+
+.u-bigBtn:hover {
+	background-color: #9575CD
+}
+
+.u-bigBtn[disabled] {
+	background-color: #e8eaed;
+	cursor: default
+}
+
+.u-resendNotice {
+	margin: 8px 0 0 32%;
+	color: #738299
+}
+
+.u-resendNotice a {
+	color: #0075ff
+}
+
+.m-wave {
+	width: 100%;
+	height: 110px;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0
+}
+
+@media screen and (max-width:1366px) {
+	.m-wave {
+		width: 100%;
+		height: 110px;
+		overflow: hidden;
+		position: relative
+	}
+	html {
+		overflow-x: hidden;
+		overflow-y: auto
+	}
+}
+
+@media screen and (max-height:900px) {
+	.m-wave {
+		width: 100%;
+		height: 110px;
+		overflow: hidden;
+		position: relative
+	}
+	html {
+		overflow-x: hidden;
+		overflow-y: auto
+	}
+}
+
+.m-regForm {
+	width: 830px;
+	margin: 0 auto;
+	display: block;
+	flex-direction: column;
+	justify-content: center
+}
+
+.m-regForm .footer {
+	font-family: '微软雅黑', '黑体', '新宋体', 'Arial Unicode MS';
+	color: #667790;
+	text-align: center;
+	margin-top: 30px;
+	position: absolute;
+	width: 100%;
+	bottom: -40px
+}
+
+.m-regForm .u-borderTop {
+	margin-bottom: 50px
+}
+
+.m-regForm .regBox {
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0 0 9px 0 rgba(92, 128, 255, 0.17);
+	padding-bottom: 40px;
+	position: relative;
+	line-height: normal;
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	top: 5px
+}
+
+.m-regForm .regBox .content {
+	min-height: 270px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center
+}
+
+.m-regForm .regBox .line_userMsg {
+	width: 100%;
+	height: 65px;
+	margin: 0 auto;
+	text-align: center
+}
+
+.m-regForm .regBox .line_userMsg .user_name {
+	display: inline-block;
+	font-size: 16px;
+	color: #373737;
+	height: 63px;
+	line-height: 63px;
+	vertical-align: middle;
+	margin-left: 13px
+}
+
+.m-regForm .regBox .header_title {
+	display: inline-block;
+	font-size: 14px;
+	color: #738299;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle
+}
+
+.m-regForm .regService {
+	color: #738299;
+	margin: 20px 0 0 32%
+}
+
+.m-regForm .regService a {
+	color: #738299;
+	text-decoration: none
+}
+
+.m-regForm .regService .u-checkBox {
+	vertical-align: top;
+	margin-top: 1px
+}
+
+.m-regForm .u-input {
+	margin-top: 45px
+}
+
+.m-regForm .u-input:first-child {
+	margin-top: 0
+}
+
+.m-regForm .bottomBar {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 26px;
+	position: relative;
+	text-align: center
+}
+
+.m-regForm .bottomBar .u-bigBtn {
+	width: 36%
+}
+
+.m-regForm .bottomBar .msg {
+	color: #fa5b5b;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 100%
+}
+
+.m-regForm .toLogin {
+	color: #667790;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 16px
+}
+
+.m-regForm .toLogin a {
+	color: #0075ff;
+	display: inline-block;
+	height: 17px;
+	border-bottom: 1px solid #0075ff;
+	text-decoration: none
+}
+
+.m-regForm .toLogin a:hover {
+	color: #268aff
+}
+
+.u-borderTop-new {
+	background: url(./image/lineBg_new.jpg) center 0 no-repeat
+}
+
+.login_WeChatI {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background: url(./image/wxReg.png?v=201810161756) no-repeat 6px 3px;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+.login_WeChatCode {
+	width: 60px;
+	height: 70px;
+	display: inline-block;
+	background: url(./image/wxReg.png?v=201810161756) no-repeat 5px -80px;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+.userRegTips {
+	margin-left: 420px;
+	padding-top: 13px;
+	display: none
+}
+
+.userRegDesc {
+	border-radius: 2px;
+	color: #738299;
+	border: 1px solid #dddfe3;
+	width: 105px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	overflow: hidden;
+	float: left
+}
+
+.contentIframe {
+	margin-top: 75px
+}
+
+.login_WeChatTips {
+	width: 220px;
+	height: 35px;
+	background-color: #fff;
+	margin-top: -99px;
+	margin-left: 308px;
+	font-size: 16px;
+	border: 1px solid #e5e5e5;
+	border-top: 0;
+	display: none
+}
+
+.weChatScannerDesc {
+	margin-left: 17px;
+	margin-top: 10px;
+	color: #738299
+}
+
+.login_UersCode {
+	width: 60px;
+	height: 70px;
+	display: inline-block;
+	background: url(./image/wxReg.png?v=201810161756) no-repeat 16px -150px;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+.login_WeChatScanner {
+	width: 25px;
+	height: 30px;
+	display: inline-block;
+	background: url(./image/wxReg.png?v=201810161756) no-repeat 0 -40px;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-top: 10px
+}
+
+.tipTriangle2 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border-width: 4px;
+	border-style: solid dashed dashed;
+	border-color: transparent transparent #fff transparent;
+	top: 20px;
+	left: 227px;
+	right: 0;
+	margin: auto;
+	display: block;
+	transform: rotate(90deg)
+}
+
+.tipTriangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border-width: 4px;
+	border-style: solid dashed dashed;
+	border-color: transparent transparent #dddfe3 transparent;
+	top: 20px;
+	left: 230px;
+	right: 0;
+	margin: auto;
+	display: block;
+	transform: rotate(90deg)
+}
+
+#siteTypeLine {
+	margin-left: -9px
+}
+
+.my_validateCode {
+	display: none;
+	position: absolute;
+	z-index: 9036;
+	width: 395px;
+	height: 338px;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 1);
+	left: 50%;
+	top: 50%;
+	margin-left: -197.5px;
+	margin-top: -169px
+}
+
+.my_validateCode .closeIcon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(./image/newRegLogin/closeIcon.png) no-repeat 5px 5px;
+	cursor: pointer
+}
+
+.my_validateCode .title {
+	width: 100%;
+	height: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	font-family: MicrosoftYaHei;
+	color: rgba(51, 51, 51, 1);
+	margin-top: 30px;
+	margin-bottom: 23px;
+	text-align: center
+}
+
+.my_validateCode .validatecodeDiv {
+	width: 330px;
+	margin: 0 auto
+}
+
+.my_validateCode .errMsg {
+	top: 48px;
+	width: 330px;
+	display: none;
+	margin: 0 auto;
+	padding-left: 22px;
+	margin-top: 9px;
+	font-size: 14px;
+	font-family: MicrosoftYaHei;
+	color: rgba(255, 92, 87, 1)
+}
+
+.weChatTipsDiv {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 88px;
+	text-align: center
+}
+
+.weChatTipsDiv .weChatIcon3 {
+	width: 30px;
+	height: 30px;
+	background: url(./image/wx_icon.png) 0 0 no-repeat;
+	display: inline-block;
+	line-height: 30px;
+	position: relative;
+	top: 0
+}
+
+.weChatTipsDiv .weChatTit {
+	font-size: 22px;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	top: -8px;
+	color: #3a405b;
+	margin-left: 6px
+}
+
+.regBox .weChatContent {
+	width: 208px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 150px;
+	height: 218px;
+	margin-bottom: 40px
+}
+
+.regBox .wxLoginCode {
+	height: 100%;
+	left: 0;
+	transition: all 300ms linear;
+	width: 100%
+}
+
+.regBox .wxLoginIframe {
+	margin-top: 57px
+}
+
+.regBox .wxLoginTips {
+	float: right;
+	margin-top: 7px;
+	margin-left: 10px
+}
+
+.regBox .weChatScannerDesc {
+	margin-left: 15px;
+	margin-top: 10px;
+	color: #738299
+}
+
+.weChatContent .scanGuide {
+	width: 265px;
+	height: 216px;
+	position: absolute;
+	top: 0;
+	background: url(./image/regAndLogin/scan_guide.png) 0 0 no-repeat;
+	right: -151px
+}
+
+.scanGuideTips {
+	font-size: 12px;
+	width: 208px;
+	position: absolute;
+	color: #767676;
+	left: 0;
+	bottom: 2px;
+	z-index: 4
+}
+
+.WeChatScanner_new {
+	width: 25px;
+	height: 30px;
+	display: inline-block;
+	background: url(./image/wxReg.png?v=201810221702) no-repeat 0 -40px;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-top: 10px
+}
+
+.iconphone {
+	background: url(../image/phone.png);
+	background-size: contain;
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	float: left;
+}
+
+.pwdline {
+	display: inline-block;
+	width: 30%;
+	height: 10px;
+	background: #eee;
+	margin-right: 5px;
+}
+
+.pwdline.yellow {
+	background: #ffa033;
+}
+
+.pwdline.green {
+	background: #4CAF50;
+}
+
+@media (max-width:767.78px) {
+	.m-regForm {
+		max-width: 95%;
+	}
+	.m-regForm .u-borderTop{
+		padding-left: 0px!important;
+		padding-top: 30px!important;
+	}
+	.u-input label,.u-input .inputWrapper{
+		width: 100%;
+		text-align: left;
+	}
+	.u-input label,.u-input input[type="text"], .u-input input[type="password"]{
+		padding-left: 15px;
+	}
+	.m-regForm .regBox .content{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.u-input .msg i{
+		display: none;
+	}
+	.m-regForm .regService{
+		margin: 20px auto;
+	}
+	.m-regForm .bottomBar{
+		margin-top: 10px;
+	}
+	.u-input .msg font{
+		margin-top: 10px;
+	}
+}
